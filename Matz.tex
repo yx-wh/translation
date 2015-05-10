@@ -6,13 +6,14 @@
 \usepackage[SlantFont]{xeCJK}
 
 \setCJKfamilyfont{mincho}{TakaoExMincho}
-\newcommand\ja[1]{{\CJKfamily{mincho}#1}}
+\setCJKfamilyfont{gothic}{TakaoExGothic}
+\newcommand\ja[1]{{\CJKfamily{gothic}#1}}
 \setCJKmainfont[BoldFont=WenQuanYi Micro Hei]{Adobe Song Std}
 \setCJKsansfont{WenQuanYi Micro Hei}
 
-\setmainfont[Mapping=tex-text]{Times New Roman}
-\setsansfont{Arial}
-\setmonofont{DejaVu Sans Mono}
+\setmainfont[Mapping=tex-text]{Liberation Serif}
+\setsansfont{Liberation Sans Narrow}
+\setmonofont{Liberation Mono}
 \XeTeXlinebreaklocale "zh"
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
 
@@ -116,13 +117,13 @@ Hacker这个词正如其字面意思所示，指的是「实践hack之道的人�
 
 August Dvorak博士开发的键盘按键排列。也称作Dvorak Simplified Keyboard(DSK)。与之相对，普通的键盘排列则称作QWERTY排列。Dvorak键盘排列如图1所示，元音字母集中在左手，因而易学易打。
 
-%   '  ,  .  p  y  f  g  c  r  l  / = \\ 
-%    a  o  e  u  i  d  h  t  n  s  - \\ 
+%   '  ,  .  p  y  f  g  c  r  l  / = 
+%    a  o  e  u  i  d  h  t  n  s  - 
 %     ;  q  j  k  x  b  m  w  v  z 
 %
-%   "  <  >  P  Y  F  G  C  R  L  ?  +  \\ 
-%    A  O  E  U  I  D  H  T  N  S  \_ \\ 
-%     :  Q  J  K  X  B  M  W  V  Z \\ 
+%   "  <  >  P  Y  F  G  C  R  L  ?  +  
+%    A  O  E  U  I  D  H  T  N  S  \_ 
+%     :  Q  J  K  X  B  M  W  V  Z 
 \includegraphics[scale=0.5]{hlfig1.jpg}
 
 图1 Dvorak键盘排列
@@ -168,7 +169,7 @@ August Dvorak博士开发的键盘按键排列。也称作Dvorak Simplified Keyb
 
 「H」「小」「A」→「\ja{ふぁ}」
 
-罗马字输入方式中容易输错的「\ja{ん}」和「\ja{っ}」都分配了单独的按键，所以「\ja{な行}」和「\ja{ん}」相混淆、以「\ja{っ}」结尾的句子，再也不用担心难打啦。
+罗马字输入方式中容易输错的「\ja{ん}」和「\ja{っ}」都分配了单独的按键，所以再也不用担心「\ja{な行}」和「\ja{ん}」相混淆，或者以「\ja{っ}」结尾的句子难打啦。
 
 使用Canna这种日文输入法的读者，可以使用我所用的kpdef文件来尝试「kyuri改」的效果。下载地址\footnote{译者：已成死链}
 
@@ -224,9 +225,9 @@ August Dvorak博士开发的键盘按键排列。也称作Dvorak Simplified Keyb
 
 至于说服上司，WideStudio的平林是个例子。他应征了IPA\footnote{IPA
 
-信息处理推进机构（日：「情報処理推進機構」）。经济产业省主管的独立行政法人。除了举行信息处理技术员考试和进行各种支援工作，兼有运营提供安全信息的JP-CERT。}的「未踏Project」\footnote{未踏Project
+信息处理推进机构（日：「\ja{情報処理推進機構}」）。经济产业省主管的独立行政法人。除了举行信息处理技术员考试和进行各种支援工作，兼有运营提供安全信息的JP-CERT。}的「未踏Project」\footnote{未踏Project
 	
-正式名称是「无人涉足软件创造事业」（日：「未踏ソフトウェア創造事業」）。这个工程以发掘「开发前所未有的软件的个人」为重点。我曾在2000年度（第1回）获得采纳。}，通过被认定为「超级创造者」\footnote{超级创造者
+正式名称是「创造前所未有的软件的事业」（日：「\ja{未踏ソフトウェア創造事業}」）。这个工程以发掘「开发前所未有的软件的个人」为重点。我曾在2000年度（第1届）获得采纳。}，通过被认定为「超级创造者」\footnote{超级创造者
 
 「未踏Project」中取得了令人惊艳的成果的人，由IPA所授予的称号。不是所有人都能获得的——我就没有。}获得了上司的理解，成功地将自己hack的结果作为工作得到了认可。像这样利用「未踏Project」使自己的hack获得世人承认的例子还有很多。
 
@@ -240,7 +241,7 @@ August Dvorak博士开发的键盘按键排列。也称作Dvorak Simplified Keyb
 
 \subsection{双赢关系}
 
-光强调黑客坏的侧面，那么黑客就会变为缺乏社会整合性的普通懒惰职员。不过，黑客们不仅是有着很高生产率的程序员，也是对新技术反应敏感的触觉的拥有者。这样的人才，如果能够灵活运用，难道不会成为企业的「秘密武器」吗？只要把黑客放到满足他们求知好奇心的工程中，放到舒适的环境里他们就很happy了，而企业也因为运用了先进生产力提升了业绩而happy；这样的场面要是能普遍出现，那样就更好啦。
+光强调黑客坏的侧面，那么黑客就会变为缺乏社会整合性的普通懒惰职员。不过，黑客们不仅是有着很高生产率的程序员，也是对新技术反应敏感的触觉的拥有者。这样的人才，如果能够灵活运用，难道不会成为企业的「秘密武器」吗？只要把黑客放到满足他们求知好奇心的工程中，放到舒适的环境里他们就很happy了，而企业也因为运用先进生产力提升了业绩而happy；这样的场面要是能普遍出现，那样就更好啦。
 
 \rightline{本文由开源杂志2005年6月号的《松本行弘的黑客生活》重构而成。}
 
@@ -320,7 +321,7 @@ Perl试图将UNIX文化中通过个别工具提供的功能全打包到一种语
 
 此外，非嵌入式的通用计算机，也就是所谓的PC\footnote{所谓的PC
 
-在日本，PersoCom（PERSOnalCOMputer）[PasoKon(PA-SOnaruKONpyu-ta)]这种称呼更为世人接受。体验过「MiCom」（MIcroCOMputer，微机）[MaiKon(MAIkuroKONpyu-ta)]的那代人，对「PC」这一缩写总有些抵抗。Personal Computer[PA-sonaruKONpyu-ta]难道不该缩略为「PERCOM」[Pa-Kon]么？不，「PERCOM」这个名称我也不喜欢。对于Super Computer[SU-PA-KONpyu-ta]的缩写SuperCom[SupaKon]也觉得不适应。
+在日本，PersoCom（PERSOnalCOMputer）[\ja{パソコン（パーソナルコンピュータ）}]这种称呼更为世人接受。体验过「MiCom」（MIcroCOMputer，微机）[\ja{マイコン（マイクロコンピュータ）}]的那代人，对「PC」这一缩写总有些抵抗。Personal Computer[\ja{パーソナルコンピュータ}]难道不该缩略为「PERCOM」[\ja{パーコン}]么？不，「PERCOM」这个名称我也不喜欢。对于Super Computer[\ja{スーパーコンピュータ}]的缩写SuperCom[\ja{スパコン}]也觉得不适应。
 【译者：日语中「微机」是个四音拍的词，它各取了「微型」和「计算机」这两个词的前两拍。个人电脑和超级计算机虽然也都是四音拍的词，但是取的却不是「个人」或者「超级」的前两个音拍。】}普及率也很高，计算机使用人口的增加远超过去。可是，绝大多数人只是把计算机用作完成特定工作的工具，有时上上网、用字处理软件写写文档、用电子表格软件做做统计什么的，但完全不它来编程。我的家人也和大多数人一样，多少用上了电脑。孩子们的学校里有了微机室，也有某了个关于信息技术的课程。也许是因此，他在我不在的时候就打开电脑的电源，上网看动画、玩游戏。
 
 将计算机作为工具使用，将别人给予的功能原封不动地使用，这并不坏。可是，让自己适应已经给定的环境，感觉像是人类（改造环境本能）的退化。其实，在信息技术专业强的大学中，现在已经有大量虽然用过计算机但对编程一窍不通的新生入学，让人感到困惑。这不是一次两次的事情了。
@@ -407,7 +408,7 @@ Alan Turing为了描述算法，曾经提出了一种虚拟的计算机——图
 
 在绝大多数情况下，代码并不是只要码完就可以置之不管的。若有bug，则需重新阅读程序，确认自己码的是否正确，有时候为了维护程序，是不是还得阅读别人写的代码。此外，即便是自己码的代码，半年之后也会变得和别人码的看不出区别，如果不再读一遍，根本不知道它是干什么用的。或许我在读程序上花的时间比写程序还多。
 
-通常来说，用更高级的语言写出的更简洁的程序中，那些本不必要的「设计模式」就更少，程序就更加集中于思维的本质，因而更易读。但是程序的简洁性和易读性并不一定成正比。那些过于简洁而缺乏信息的程序，在阅读时就有很多地方不得不靠自己猜，反而变得诘屈聱牙。例如，在写程序的时候会觉得很麻烦的类型（type）信息，在读程序的时候反而能帮上大忙。此外，使用符号「压缩」过的程序，即使短也是超难理解的。因为这个，有的编程语言被批成了“Write-only language”或者“executable line noise”。不过我在这里就不点出它们的大名了（笑）。
+通常来说，用更高级的语言写出的更简洁的程序中，那些本不必要的「设计模式」就更少，程序就更加集中于思维的本质，因而更易读。但是程序的简洁性和易读性并不一定成正比。那些过于简洁而缺乏信息的程序，在阅读时就有很多地方不得不靠自己猜，反而变得诘屈聱牙。例如，在写程序的时候会觉得很麻烦的类型（type）信息，在读程序的时候反而能帮上大忙。此外，使用符号「压缩」过的程序，即使短也是超难理解的。因为这个，有的编程语言被黑成了“Write-only language”或者“executable line noise”。不过我在这里就不点出它们的大名了（笑）。
 
 \subsection{作为程序运行环境的语言}
 
@@ -511,13 +512,13 @@ OSCON的第四天，我有幸和Larry Wall（Perl）、Rasmus Lerdorf（PHP）�
 
 最早的Emacs，是天才黑客Richard Stallman使用ITS\footnote{ITS
 
-ITS（Incompatible Timesharing System，不兼容分时系统）是MIT人工智能研究所（的黑客们）自主研发的操作系统。当初在DEC PDP-6，后来在PDP-10上运行。}上的宏编辑器Teco编写的。由于易用而受到好评，Emacs产生了众多的衍生版。后来设计了Java的James Gosling也在1981年开发了UNIX版的Emacs。Gosling开发的Emacs（通称Gosmacs）使用一种叫做MockLisp的、类似Lisp的语言进行扩展。后来，Stallman也想用UNIX版的Emacs，于是试图以Gosmacs为基础进行修改。Stallman想要的不是MockLisp，而是嵌入了真正的Lisp的Emacs。
+ITS（Incompatible Timesharing System，不兼容分时系统）是MIT人工智能研究所（的黑客们）自主研发的操作系统。当初在DEC PDP-6，后来在PDP-10上运行。}上的宏编辑器Teco编写的。由于易用而受到好评，Emacs产生了众多的衍生版。后来设计了Java的James Gosling也在1981年开发了UNIX版的Emacs。Gosling开发的Emacs（通称Gosmacs）使用一种叫做MockLisp的、类似Lisp的语言进行扩展。后来，Stallman也想用UNIX版的Emacs，于是试图以Gosmacs为基础进行修改。Stallman想要在Emacs中嵌入真正的Lisp，而非MockLisp。
 
 可是，Gosling把Gosmacs的权利卖给了一个叫做Unipress\footnote{Unipress
 
   Unipress以Unipress Emacs这一商品名开始了Gosmacs的销售。Unipress通告Stallman，要他不要再发布Unipress Emacs的代码，因为Unipress拥有著作权。}的企业，Stallman就没法以Gosmacs的源码为基础开发新的Emacs了。最后，Stallman从零开始开发了UNIX版的Emacs\footnote{从零开始开发
 
-  这就是现在大家（包括我在内）在使用的GNU Emacs的起源。一想到Unipress Emacs现在连渣都不剩了，就觉得十分讽刺。}。正是从这件事中可以发现一个道理：软件的自由只能由自己来守护。在这个时候Stallman就发现了「仅仅是公开源代码还不够」这一事实，可以说是领先时代15年了。
+  这就是现在大家（包括我在内）正在使用的GNU Emacs的起源。一想到Unipress Emacs现在连渣都不剩了，就觉得讽刺。}。正是从这件事中可以发现一个道理：软件的自由只能由自己来守护。在这个时候Stallman就发现了「仅仅是公开源代码还不够」这一事实，可以说是领先时代15年了。
 
 随后，Stallman建立了守护软件自由的团体——FSF\footnote{FSF
 
@@ -534,5 +535,16 @@ Unix to Unix CoPy之略。连接一定距离内的远程主机（有需要也可
 但是，不容忘却的是，这样的幸福和自由是通过黑客们（特别是Stallman）过去的火热斗争才取得的。试图夺走软件自由的行动，将来仍有可能再度发生。实际上在软件专利和DRM\footnote{DRM
 
 Digital Rights Management之略。针对音乐或视频等数字内容，进行加密以防止违法复制和放流，促进正版流通的组织框架，以及这种框架中使用到的技术手段。}领域已经有了这种倾向。黑客们，伙伴们，做好准备，为了自由而战的时刻或许有一天又要到来。
+
+\rightline{本文由开源杂志2005年11月号的《松本行弘的黑客生活》重构而成。}
+
+\section{第9回　测定狂时代}
+
+多数黑客都有着某种速度狂的一面。但是在开始优化前，有必要搞清楚这工作是否是白费力气。
+
+\subsection{测定狂}
+
+日本有句话叫「%闷声发大财
+笨蛋不会感冒」，
 
 \end{document}
