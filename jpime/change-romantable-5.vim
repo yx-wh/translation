@@ -9,12 +9,12 @@
 %s/L/b/g
 %s/M/w/g
 %s/N/e/g
-%s/P/t/g
+%s/P/q/g
 %s/R/r/g
 %s/S/f/g
 %s/T/g/g
 %s/V/y/g
 %s/W/x/g
-%s/Y/q/g
+%s/Y/t/g
 %s/Z/z/g
 
