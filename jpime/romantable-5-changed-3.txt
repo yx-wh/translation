@@ -443,7 +443,6 @@ qk	ぴ
 rk	り
 fk	し
 gk	ち
-gbk	つぃ
 yk	ゔぃ
 xk	うぃ
 xbk	ゐ
