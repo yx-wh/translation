@@ -39,6 +39,7 @@ it	どぅ
 iz	じぇ
 ix	しぇ
 ic	ちぇ
+iv	てゅ
 pq	とぅん
 pw	てぃん
 pr	でぃん
@@ -46,6 +47,7 @@ pt	どぅん
 pz	じぇん
 px	しぇん
 pc	ちぇん
+pv	てゅん
 tu	すぃ
 to	ずぃ
 tq	くぁん
